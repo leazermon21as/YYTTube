@@ -1,0 +1,29 @@
+.videos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.vids img{
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.vids p {
+    color: gray;
+}
+
+.vids img:hover{
+    border-radius: 0px;
+    opacity: 0.7;
+}
+
+.vids img:active{
+    opacity: 0.4;
+}
+
+.vids{
+    
+}

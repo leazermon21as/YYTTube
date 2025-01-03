@@ -1,0 +1,215 @@
+body{
+    background-color: rgb(22, 22, 22);
+}
+
+header{
+    display: flex;
+    
+    color: #fff;
+    justify-content: space-around;
+}
+
+.header__icon {
+    display: flex;
+    img {
+        width: 50px;
+        height: 70px;
+    }
+    p {
+        font-size: 12px;
+        color: grey;
+    }
+}
+
+.header__input{
+    display: flex;
+}
+
+.header__input input {
+    height: 35px;
+    
+    width: 500px;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: rgb(22, 22, 22);
+    border: 1px solid grey;
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+    
+}
+.header__input input:active {
+    border: 1px solid rgb(78, 21, 110);
+}
+
+.header__button {
+    position: absolute;
+    background-color: rgb(78, 78, 78);
+    border: none;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    height:39px;
+    margin-top: -10px;
+
+    img{
+    width: 20px;height: 20px;
+    }
+}
+
+.header__button:hover{
+    opacity: 0.9;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+.header__footer {
+    display: flex;
+}
+
+.header__footer button {
+    width: 100px;
+    height: 33px;
+    border-radius: 20px;
+    border: none;
+    color: #FFF;
+    background-color: rgb(78, 78, 78);
+    padding-bottom: 30px;
+}
+
+
+.header__footer button:hover{
+    opacity: 0.9;
+}
+
+.header__custom {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+.plus {
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+.header__user-logo{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(2, 70, 196);
+    text-align: center;
+    border-radius: 50px;
+    h1 {
+        margin-top: 6px;
+    }
+}
+/* BURGER MENU ===================================================*/
+
+.burger-checkbox {
+    position: absolute;
+    visibility: hidden;
+  }
+  .burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+    margin-top: 20px;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  .burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #fffefe;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+  }
+  .burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+  }
+  .burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+  }
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+  }
+  .menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    
+    padding: 42px 0;
+    margin: 0;
+    background:  rgb(27, 27, 27);;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+    height: 100%;
+  }
+  .menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 60px;
+  }
+  .menu-item:hover {
+    background: rgba(255,255,255,.2)
+    
+  }
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+    
+}
+
+/* MEDIA */
+
+@media(max-width:1050px) {
+    .header__input input {
+        width: 400px;
+    }
+}
+
+@media(max-width:918px) {
+    .header__input input {
+        width: 300px;
+    }
+}
+
+@media(max-width:900px) {
+    .header__input input {
+        width: 250px;
+    }
+}
+
+@media(max-width:750px) {
+    .header__input input {
+        display: none;
+    }
+    .header__button {
+        border-radius: 20px;
+       
+    }
+}
