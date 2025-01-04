@@ -1,0 +1,25 @@
+.setting__menu{
+    color: rgb(224, 215, 215);
+}
+
+.setting__menu-block {
+    width: 240px;
+    height: 100vh;
+}
+
+.set__list ul{
+    list-style-type: none;
+    line-height: 2.5;
+    margin-left: -40px;
+    
+}
+
+.set__list li {
+    width: 230px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.set__list li:hover {
+    background-color: rgb(48, 45, 45);
+}

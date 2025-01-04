@@ -1,0 +1,24 @@
+.category__button{
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.category__button button{
+    min-width: 100px;
+    min-height: 30px;
+    height: auto;
+    width: auto;
+    background-color: rgb(37, 37, 37);
+    border-radius: 10px;
+    
+    border: none;
+    color: #fff;
+    transition: 0.4s;
+} 
+
+.category__button button:hover{
+    background-color: #fff;
+    color: #000;
+} 

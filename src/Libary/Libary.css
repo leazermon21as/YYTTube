@@ -1,9 +1,12 @@
+html, body {
+    scroll-behavior: smooth;
+}
 .videos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     color: #fff;
-    margin-top: 100px;
+    margin-top: 40px;
 }
 
 .vids img{

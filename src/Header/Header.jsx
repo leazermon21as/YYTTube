@@ -1,24 +1,26 @@
 import './Header.css'
 import logo from '../../public/logo/YouTube.svg'
 import search from '../../public/logo/search.svg'
+import { Link } from 'react-router-dom'
 
 export default function () {
     return (
         <div>
             
             <header>
-                <div className="menu">
-                    <input type="checkbox" id="burger-checkbox" className="burger-checkbox" />
-                    <label htmlFor="burger-checkbox" className="burger"></label>
-                    <ul className="menu-list">
-                        <li><a href="#" className="menu-item">Главная</a></li>
-                        <li><a href="#" className="menu-item">Shorts</a></li>
-                        <li><a href="#" className="menu-item">Подписки</a></li>
-                        <li><a href="#" className="menu-item">Настройки</a></li>
-                        <li><a href="#" className="menu-item">Жалобы</a></li>
-                        <li><a href="#" className="menu-item">О нас</a></li>
-                    </ul>
-                </div>
+            <div className="menu">
+            <input type="checkbox" id="burger-checkbox" className="burger-checkbox" />
+            <label htmlFor="burger-checkbox" className="burger"></label>
+            <ul className="menu-list">
+                <li><Link to="/" className="menu-item">Главная</Link></li>
+                <li><Link to="/shorts" className="menu-item">Shorts</Link></li>
+                <li><Link to="/folowing" className="menu-item">Подписки</Link></li>
+                <li><Link to="/setting" className="menu-item">Настройки</Link></li>
+                <li><Link to="/report" className="menu-item">Жалобы</Link></li>
+                <li><Link to="/about" className="menu-item">О нас</Link></li>
+            </ul>
+            </div>
+
 
                 <div className="header__icon">
                     <img src={logo} alt="YouTube" />
